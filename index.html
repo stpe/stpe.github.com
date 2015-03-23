@@ -2,11 +2,89 @@
 <html>
 <head>
 	<title>stpe.github.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            margin: 0;
+            background-color: #CBE86B;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 1.2em;
+        }
+
+        a {
+            font-weight: 500;
+            color: #CBE86B;
+            background-color: #000;
+            text-decoration: none;
+            padding: 2px;
+        }
+
+        a:hover {
+            color: #000;
+            background-color: inherit;
+        }
+
+        .top {
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .top img {
+            width: 450px;
+            height: 402px;
+            margin: 20px 0;
+        }
+
+        .text {
+            text-align: justify;
+        }
+
+        .text p {
+            width: 450px;
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 1.5;
+        }
+
+        .colorbar-one {
+            height: 5px;
+        }
+        .colorbar-two {
+            background-color: #F2E9E1;
+            height: 15px;
+        }
+        .colorbar-three {
+            background-color: #1C140D;
+            height: 30px;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .top img {
+                width: 95%;
+                height: auto;
+            }
+
+            .text p {
+                width: 95%;
+            }
+        }
+
+    </style>
 </head>
 <body>
-	<img src="http://dl.dropbox.com/u/20181/guarding-bunny.jpg">
-    <p>
-        Extremely rarely I post something on a <a href="http://www.stpe.se">blog</a>, but I keep track of my <a href="http://games.stpe.se">retro games</a>. Most of all I enjoy <a href="https://github.com/stpe">code</a>, also at <a href="http://se.linkedin.com/in/stefpet/">work</a>. Got <a href="https://twitter.com/stpe">@stpe</a> and also for <a href="https://instagram.com/stpe">photos</a>.
-    </p>
+    <section class="top">
+    	<img src="http://dl.dropbox.com/u/20181/guarding-bunny.jpg">
+    </section>
+
+    <section class="colorbar-one"></section>
+    <section class="colorbar-two"></section>
+    <section class="colorbar-three"></section>
+
+    <section class="text">
+        <p>
+            Extremely rarely I post something on a <a href="http://www.stpe.se">blog</a>, but I keep track of my <a href="http://games.stpe.se">retro games</a>. Most of all I enjoy <a href="https://github.com/stpe">code</a>, also at <a href="http://se.linkedin.com/in/stefpet/">work</a>. Got <a href="https://twitter.com/stpe">@stpe</a> and also for <a href="https://instagram.com/stpe">photos</a>.
+        </p>
+    </section>
 </body>
 </html>
