@@ -3,3 +3,33 @@
 <h1>Track Host System</h1>
 
 <p>The Track Host System is a custom made Facebook App that automatically post the content from the track host calendar of the <a href="http://vrcsk.se">VRCSK</a> race track (Stockholm, Sweden) to its Facebook Page, to inform members of when it is open and who is the current track host.</p>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '745125535844150',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+
+    FB.login(function(response) {
+        if (response.authResponse) {
+         console.log('Welcome!  Fetching your information.... ');
+         FB.api('/me', function(response) {
+           console.log('Good to see you, ' + response.name + '.');
+         });
+        } else {
+         console.log('User cancelled login or did not fully authorize.');
+        }
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
